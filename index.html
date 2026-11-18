@@ -9135,10 +9135,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(<App />);
   })();
 </script>
 <script>
-  // App manbasini o'qib, uni AYNAN "classic" JSX runtime bilan qo'lda kompilyatsiya qilamiz.
-  // (Ba'zi Babel versiyalari standart ravishda "automatic" JSX runtime'ga o'tadi va bu
-  // brauzerda ishlamaydigan `import ... from "react/jsx-runtime"` qatorini qo'shib qo'yadi —
-  // shu sababli bu yerda runtime aniq "classic" qilib belgilanadi.)
+
   (function () {
     var source = document.getElementById('app-source').textContent;
     var compiled = Babel.transform(source, {
